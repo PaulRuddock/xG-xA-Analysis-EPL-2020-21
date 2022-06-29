@@ -1,0 +1,8 @@
+alter TABLE EPL drop COLUMN position;
+alter TABLE EPL drop COLUMN passes_attempted;
+alter TABLE EPL drop COLUMN perc_passes_completed;
+alter TABLE EPL drop COLUMN yellow_cards;
+alter TABLE EPL drop COLUMN red_cards;
+alter TABLE EPL drop COLUMN nationality;
+alter TABLE EPL drop COLUMN starts;
+select * from EPL where xg>0.3 and xa>0.3;
